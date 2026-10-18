@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0812">
+  <meta name="description" content="Link profil gaming Maui — komunitas, sosial media, kode promo, dan spesifikasi PC.">
+  <title>MAUIWOW1E — Gaming Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#09070d;--panel:#12101b;--panel2:#191522;--line:rgba(255,255,255,.075);--muted:#a6a0b4;--text:#f8f6ff;--purple:#9b5cff;--purple2:#6d35c7}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 15% 0%,rgba(119,55,190,.18),transparent 35%),radial-gradient(ellipse at 100% 45%,rgba(128,45,76,.12),transparent 35%),var(--bg);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);min-height:100vh;padding:28px 14px 48px}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(100%,680px);margin:0 auto}
+    .topline{display:flex;align-items:center;justify-content:space-between;margin:0 4px 16px;color:#d7d1e2;font-size:12px}
+    .live-dot{width:7px;height:7px;border-radius:50%;background:#9bff9b;display:inline-block;margin-right:7px;box-shadow:0 0 10px #78ff9a}
+    .profile{background:linear-gradient(145deg,rgba(22,19,34,.97),rgba(18,13,22,.96));border:1px solid var(--line);border-radius:30px;padding:30px 24px 24px;box-shadow:0 22px 70px rgba(0,0,0,.24);overflow:hidden}
+    .hero{text-align:center;padding:6px 0 26px}
+    .avatar{width:118px;height:118px;border-radius:50%;margin:0 auto 17px;border:3px solid rgba(183,127,255,.72);background:linear-gradient(135deg,#3d2360,#171221 60%,#4a285d);display:grid;place-items:center;box-shadow:0 0 0 7px rgba(155,92,255,.07),0 0 35px rgba(155,92,255,.17);font-size:42px;font-weight:800;letter-spacing:-3px;color:#f8edff}
+    h1{font-size:clamp(25px,6vw,34px);letter-spacing:-1.3px;margin:0;font-weight:800}
+    .nickname{color:var(--muted);margin:8px 0 0;font-size:15px}
+    .tag{display:inline-flex;align-items:center;margin-top:13px;padding:7px 11px;border:1px solid rgba(155,92,255,.22);background:rgba(155,92,255,.08);border-radius:999px;color:#d9c4ff;font-size:11px;letter-spacing:.4px}
+    .section-label{font-size:11px;font-weight:800;letter-spacing:2px;color:#938aa5;margin:10px 0 12px 3px}
+    .links{display:grid;gap:10px}
+    .link-card{display:flex;align-items:center;gap:14px;padding:16px 17px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(105deg,rgba(29,25,43,.9),rgba(30,22,31,.75));transition:transform .18s ease,border-color .18s ease,background .18s ease;min-height:76px}
+    .link-card:hover{transform:translateY(-2px);border-color:rgba(174,120,255,.45);background:linear-gradient(105deg,rgba(43,31,65,.95),rgba(37,24,43,.9))}
+    .link-icon{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;border-radius:14px;background:rgba(155,92,255,.12);color:#d7b9ff;font-size:20px;font-weight:800}
+    .link-copy{flex:1;min-width:0}
+    .link-title{font-size:14px;font-weight:800;letter-spacing:.15px}
+    .link-sub{font-size:12px;color:var(--muted);margin-top:5px;overflow-wrap:anywhere}
+    .arrow{font-size:18px;color:#7d748d;padding-left:5px}
+    .promo{margin-top:22px;padding:20px;border-radius:22px;border:1px solid var(--line);background:rgba(12,10,18,.42)}
+    .promo-label{font-size:11px;font-weight:800;letter-spacing:2px;color:#8e859d}
+    .promo-name{font-size:14px;font-weight:800;margin:13px 0 12px}
+    .promo-code{display:flex;align-items:center;gap:12px;background:#0b0910;border:1px solid rgba(255,255,255,.08);border-radius:15px;padding:12px 13px}
+    .promo-code code{font-family:inherit;letter-spacing:2px;font-size:13px;flex:1;color:#e8e1f1;overflow-wrap:anywhere}
+    .copy-btn{border:0;background:rgba(255,255,255,.07);color:#f5edff;border-radius:10px;padding:9px 12px;font:700 12px Inter, sans-serif;cursor:pointer}
+    .copy-btn:hover{background:rgba(155,92,255,.25)}
+    .copy-status{min-height:16px;color:#c5a5ff;font-size:11px;margin-top:8px}
+    .specs{margin-top:22px;padding:21px 20px 20px;border-radius:22px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(21,18,32,.92),rgba(18,13,21,.92))}
+    .spec-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px}
+    .spec-head h2{font-size:13px;letter-spacing:2px;margin:0;color:#c4bbd2}
+    .spec-head span{font-size:10px;color:#c8a9ff;background:rgba(155,92,255,.1);padding:6px 8px;border-radius:999px}
+    .spec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .spec-item{border:1px solid var(--line);background:rgba(255,255,255,.025);border-radius:15px;padding:13px}
+    .spec-key{font-size:10px;color:#92899f;text-transform:uppercase;letter-spacing:1px}
+    .spec-value{font-size:13px;font-weight:700;margin-top:7px;overflow-wrap:anywhere}
+    .edit-note{font-size:11px;color:#8f879c;line-height:1.6;margin:14px 1px 0}
+    footer{text-align:center;color:#716a7c;font-size:11px;padding:22px 8px 0}
+    .toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#21172f;border:1px solid #553586;color:#f4eaff;border-radius:12px;padding:11px 16px;font-size:12px;transition:.2s;z-index:10}
+    .toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:420px){body{padding:16px 10px 30px}.profile{padding:22px 14px 16px;border-radius:25px}.avatar{width:104px;height:104px;font-size:37px}.link-card{padding:14px 12px;gap:11px;min-height:72px}.link-icon{width:39px;height:39px;flex-basis:39px}.link-title{font-size:13px}.promo,.specs{padding:17px 14px}.spec-grid{gap:8px}.spec-item{padding:11px}.spec-value{font-size:12px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="topline"><span><span class="live-dot"></span>GAMING PROFILE</span><span>LINK HUB · MAUI</span></div>
+    <section class="profile">
+      <header class="hero">
+        <div class="avatar" aria-label="Avatar Maui">MW</div>
+        <h1>@mauiwow1e</h1>
+        <p class="nickname">Maui</p>
+        <span class="tag">✦ GAMER • VALORANT</span>
+      </header>
+
+      <div class="section-label">MY LINKS</div>
+      <nav class="links" aria-label="Tautan profil">
+        <!-- Ganti href="#" dengan URL akun/tautan kamu. -->
+        <a class="link-card" href="https://discord.gg/H3wP2cJD8S" data-placeholder="Discord">
+          <span class="link-icon">◉</span><span class="link-copy"><span class="link-title">DISCORD</span><span class="link-sub"> 
+          Join DC Meureun</span></span><span class="arrow">↗</span>
+        </a>
+        <a class="link-card" href="https://bit.ly/MAUIVF" data-placeholder="Top Up Game">
+          <span class="link-icon">✦</span><span class="link-copy"><span class="link-title">TOP UP GAME DISINI</span><span class="link-sub"> Game credits & top up</span></span><span class="arrow">↗</span>
+          </a>
+        <a class="link-card" href="https://sociabuzz.com/maui/tribe" data-placeholder="SociaBuzz">
+          <span class="link-icon">◉</span><span class="link-copy"><span class="link-title">SOCIABUZZ</span><span class="link-sub"> Link yang mau support</span></span><span class="arrow">↗</span>
+        </a>
+        <a class="link-card" href="https://www.tiktok.com/@mauiwow1e" data-placeholder="TikTok">
+          <span class="link-icon">♪</span><span class="link-copy"><span class="link-title">TIKTOK</span><span class="link-sub"> Clips dan Live</span></span><span class="arrow">↗</span>
+        </a>
+        <a class="link-card" href="https://www.instagram.com/mauiwow1ee/" data-placeholder="Instagram">
+          <span class="link-icon">◎</span><span class="link-copy"><span class="link-title">INSTAGRAM</span><span class="link-sub"> Follow my daily updates</span></span><span class="arrow">↗</span>
+        </a>
+        <a class="link-card" href="https://www.youtube.com/@mauiwow1e" data-placeholder="YouTube">
+          <span class="link-icon">▶</span><span class="link-copy"><span class="link-title">YOUTUBE</span><span class="link-sub"> Watch my videos & streams</span></span><span class="arrow">↗</span>
+        </a>
+      </nav>
+
+      <section class="promo" aria-label="Kode promo">
+        <div class="promo-label">PROMO CODE</div>
+        <div class="promo-name">KODE PROMO TOP UP DAN BELI AKUN</div>
+        <div class="promo-code"><code id="promoCode">MAUI</code><button class="copy-btn" id="copyBtn" type="button">Salin ⧉</button></div>
+        <div class="copy-status" id="copyStatus" aria-live="polite"></div>
+      </section>
+
+      <section class="specs" id="pc-spec">
+        <div class="spec-head"><h2>PC SPEC</h2><span>MY SETUP</span></div>
+        <div class="spec-grid">
+          <div class="spec-item"><div class="spec-key">Processor</div><div class="spec-value">Ryzen 7 7800X3D</div></div>
+          <div class="spec-item"><div class="spec-key">Graphics Card</div><div class="spec-value">RTX 5060</div></div>
+          <div class="spec-item"><div class="spec-key">Memory / RAM</div><div class="spec-value">32GB RAM</div></div>
+          <div class="spec-item"><div class="spec-key">Storage</div><div class="spec-value">512 GB SSD</div></div>
+          <div class="spec-item"><div class="spec-key">Monitor</div><div class="spec-value">Skyworth F27G67Q 300HZ</div></div>
+          <div class="spec-item"><div class="spec-key">Peripherals</div><div class="spec-value">Sensitivity: 800 DPI / 0.35 | Resolution: 2560 x 1440 | Crosshair: 1-4-2-0 outline on | Mouse: Razer Viper V3 Pro | Mousepad: GLSSWRKS Zane | Headphone: SIMGOT EW300HBB | Keyboard : Yunzi RT75</div></div>
+        </div>
+      </section>
+    </section>
+    <footer>© <span id="year"></span> MAUIWOW1E · Made for gamers</footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toast = document.getElementById('toast');
+    let toastTimer;
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 2400);
+    }
+    document.querySelectorAll('[data-placeholder]').forEach(link => {
+      link.addEventListener('click', event => {
+        if (link.getAttribute('href') === '#') {
+          event.preventDefault();
+          showToast('Tautan ' + link.dataset.placeholder + ' belum diatur. Edit href di index.html.');
+        }
+      });
+    });
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      const code = document.getElementById('promoCode').textContent.trim();
+      const status = document.getElementById('copyStatus');
+      try {
+        await navigator.clipboard.writeText(code);
+        status.textContent = 'Kode berhasil disalin!';
+        showToast('Kode promo disalin: ' + code);
+      } catch (error) {
+        const field = document.createElement('textarea');
+        field.value = code;
+        field.setAttribute('readonly', '');
+        field.style.position = 'absolute';
+        field.style.left = '-9999px';
+        document.body.appendChild(field);
+        field.select();
+        const copied = document.execCommand('copy');
+        field.remove();
+        status.textContent = copied ? 'Kode berhasil disalin!' : 'Salin kode secara manual: ' + code;
+        showToast(copied ? 'Kode promo disalin: ' + code : 'Silakan salin kode secara manual.');
+      }
+    });
+  </script>
+</body>
+</html>
